@@ -1,0 +1,36 @@
+.font-s {
+  font: 400 1.125rem/1.55 "Chivo", sans-serif;
+}
+
+.font-m {
+  font: 900 1.75rem/1.42 "Chivo", sans-serif;
+  letter-spacing: 0.3125rem;
+}
+
+.font-l {
+  font: 400 3.25rem/1.19 "Chivo", sans-serif;
+  text-transform: uppercase;
+}
+
+.font-xl {
+  font: 900 12.5rem "Chivo", sans-serif;
+}
+
+@media (max-width: 800px) {
+  .font-l {
+    font-size: 3rem;
+    line-height: 1.16;
+  }
+}
+
+@media (max-width: 500px) {
+  .font-s {
+    font-size: 0.9375rem;
+    line-height: 1.66;
+  }
+
+  .font-l {
+    font-size: 1.625rem;
+    line-height: 1.46;
+  }
+}
