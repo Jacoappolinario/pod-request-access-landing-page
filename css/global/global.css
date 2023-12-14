@@ -1,0 +1,25 @@
+body {
+  background-color: var(--color-1);
+  background-image: url("../../images/desktop/bg-pattern-dots.svg"),
+    url("../../images/desktop/image-host.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom 68px right, center right;
+  margin: 0px;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+p,
+ul {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
