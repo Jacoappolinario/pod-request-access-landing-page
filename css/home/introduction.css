@@ -1,0 +1,27 @@
+.introduction-bg {
+  background: var(--color-1);
+  width: 723px;
+  height: 509px;
+  padding-top: 5.5rem;
+  padding-right: 3.63rem;
+  box-sizing: border-box;
+}
+
+.introduction h1 {
+  margin-bottom: 1.5rem;
+}
+
+.introduction p {
+  max-width: 40ch;
+  margin-bottom: 2.5rem;
+}
+
+.introduction form {
+  margin-bottom: 4rem;
+}
+
+.introduction ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
