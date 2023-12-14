@@ -1,3 +1,7 @@
+.container {
+  margin-left: 10.31rem;
+}
+
 .input {
   font: 400 0.875rem/2 "Chivo", sans-serif;
   color: var(--color-0);
