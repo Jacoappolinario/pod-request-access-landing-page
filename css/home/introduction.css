@@ -2,9 +2,8 @@
   background: var(--color-1);
   width: 723px;
   height: 509px;
-  padding-top: 5.5rem;
-  padding-right: 3.63rem;
   box-sizing: border-box;
+  padding-top: 5.5rem;
 }
 
 .introduction h1 {
