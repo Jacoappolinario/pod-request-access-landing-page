@@ -30,8 +30,9 @@ ul {
   background-image: url("../../images/desktop/bg-pattern-dots.svg"),
     url("../../images/desktop/image-host.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom right, bottom right;
+  background-position: bottom right, bottom 3.25rem right;
   background-color: var(--color-1);
+  padding-bottom: 3.25rem;
 }
 
 /*
