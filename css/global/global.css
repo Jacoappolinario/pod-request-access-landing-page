@@ -32,6 +32,7 @@ ul {
   background-repeat: no-repeat, no-repeat;
   background-position: bottom right, bottom 3.25rem right;
   background-color: var(--color-1);
+  padding-top: 3.25rem;
   padding-bottom: 3.25rem;
 }
 
