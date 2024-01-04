@@ -23,7 +23,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 375px) {
   .font-s {
     font-size: 0.9375rem;
     line-height: 1.66;
