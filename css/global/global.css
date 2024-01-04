@@ -1,7 +1,7 @@
 body {
   background-color: var(--color-1);
   margin: 0px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,7 +25,7 @@ ul {
 
 .wrapper {
   box-sizing: border-box;
-  width: 79.6875rem;
+  width: 1275px;
 
   background-image: url("../../images/desktop/bg-pattern-dots.svg"),
     url("../../images/desktop/image-host.jpg");
@@ -36,7 +36,19 @@ ul {
   padding-bottom: 3.25rem;
 }
 
-/*
-  TODO: Arrumar posicionamentos das coisas principais da tela que ainda ta errado, que ainda não 
-  esta de acordo com o design.
-*/
+@media (max-width: 1440px) {
+  body {
+    justify-content: end;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    background-image: url("../../images/desktop/bg-pattern-dots.svg"),
+      url("../../images/tablet/image-host.jpg");
+    background-position: bottom left 1.88rem, top right;
+    padding-top: 3.13rem;
+    padding-left: 2.44rem;
+    padding-bottom: 16.06rem;
+  }
+}
