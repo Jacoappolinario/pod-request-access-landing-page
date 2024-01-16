@@ -9,6 +9,7 @@
 
   <title>Frontend Mentor | Pod request access landing page</title>
   <!-- TODO: Implementar as otimizações no código e aprimorar, caso eu identifique algo que necessite ajustes. -->
+  <!-- TODO: Melhore os nomes das classes, caso queira. -->
   <link rel="stylesheet" href="./css/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,12 +24,16 @@
     </header>
 
     <div class="introduction">
-      <h1>Publish your podcasts <span class="color-0">everywhere.</span></h1>
-      <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+      <h1 class="title">Publish your podcasts <span class="color-0">everywhere.</span></h1>
+      <p class="description">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
 
       <form class="form">
-        <input type="email" name="email" id="email" placeholder="Email address">
-        <button>Request Access</button>
+        <div class="form-group">
+          <input type="email" name="email" id="email" placeholder="Email address">
+          <button>Request Access</button>
+        </div>
+
+        <span class="error-message">Oops! Please check your email</span>
       </form>
 
       <ul class="platform-list">
