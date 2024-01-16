@@ -8,6 +8,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
   <title>Frontend Mentor | Pod request access landing page</title>
+  <!-- TODO: Implementar as otimizações no código e aprimorar, caso eu identifique algo que necessite ajustes. -->
+  <!-- TODO: Melhore os nomes das classes, caso queira. -->
   <link rel="stylesheet" href="./css/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,18 +18,22 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <main class="container">
     <header class="header">
       <img src="./images/desktop/logo.svg" alt="Logo">
     </header>
 
-    <main class="introduction">
-      <h1 class="font-l color-3">Publish your podcasts <span class="color-0">everywhere.</span></h1>
-      <p class="font-s color-5">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+    <div class="introduction">
+      <h1 class="title">Publish your podcasts <span class="color-0">everywhere.</span></h1>
+      <p class="description">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
 
       <form class="form">
-        <input type="email" name="email" id="email" placeholder="Email address">
-        <button class="button">Request Access</button>
+        <div class="form-group">
+          <input type="email" name="email" id="email" placeholder="Email address">
+          <button>Request Access</button>
+        </div>
+
+        <span class="error-message">Oops! Please check your email</span>
       </form>
 
       <ul class="platform-list">
@@ -36,8 +42,8 @@
         <li><img src="./images/desktop/google-podcasts.svg" alt="Google Podcasts"></li>
         <li><img src="./images/desktop/pocket-casts.svg" alt="Pocket Casts"></li>
       </ul>
-    </main>
-  </div>
+    </div>
+  </main>
 </body>
 
 </html>
