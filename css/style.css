@@ -37,6 +37,7 @@ ul {
 }
 
 .container {
+  /* TODO: Corrigir caminhos das imagens aqui */
   background-image: url("../../images/desktop/bg-pattern-dots.svg"),
     url("../../images/desktop/image-host.jpg");
   background-repeat: no-repeat, no-repeat;
@@ -164,6 +165,7 @@ ul {
   }
 
   .container {
+    /* TODO: Corrigir caminhos das imagens aqui */
     background-image: url("../../images/desktop/bg-pattern-dots.svg"),
       url("../../images/tablet/image-host.jpg");
     background-position: bottom left 1.88rem, top right;
@@ -192,6 +194,7 @@ ul {
   }
 
   .container {
+    /* TODO: Corrigir caminhos das imagens aqui */
     background-color: var(--color-1);
     background-image: url("../../images/mobile/image-host.jpg");
     background-repeat: no-repeat;
