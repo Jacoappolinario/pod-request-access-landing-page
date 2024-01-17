@@ -38,8 +38,8 @@ ul {
 
 .container {
   /* TODO: Corrigir caminhos das imagens aqui */
-  background-image: url("../../images/desktop/bg-pattern-dots.svg"),
-    url("../../images/desktop/image-host.jpg");
+  background-image: url("../images/desktop/bg-pattern-dots.svg"),
+    url("../images/desktop/image-host.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom right, bottom 3.25rem right;
   box-sizing: border-box;
@@ -165,9 +165,8 @@ ul {
   }
 
   .container {
-    /* TODO: Corrigir caminhos das imagens aqui */
-    background-image: url("../../images/desktop/bg-pattern-dots.svg"),
-      url("../../images/tablet/image-host.jpg");
+    background-image: url("../images/desktop/bg-pattern-dots.svg"),
+      url("../images/tablet/image-host.jpg");
     background-position: bottom left 1.88rem, top right;
     padding-top: 3.12rem;
     padding-bottom: 16.06rem;
@@ -194,9 +193,8 @@ ul {
   }
 
   .container {
-    /* TODO: Corrigir caminhos das imagens aqui */
     background-color: var(--color-1);
-    background-image: url("../../images/mobile/image-host.jpg");
+    background-image: url("../images/mobile/image-host.jpg");
     background-repeat: no-repeat;
     background-position: initial;
     background-blend-mode: multiply;
