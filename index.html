@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
   <title>Frontend Mentor | Pod request access landing page</title>
-  <!-- TODO: Implementar as otimizações no código e aprimorar, caso eu identifique algo que necessite ajustes. -->
-  <!-- TODO: Melhore os nomes das classes, caso queira. -->
-  <link rel="stylesheet" href="./css/style.css">
+  <meta name="description" content="Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,25 +18,25 @@
 </head>
 
 <body>
-  <main class="container">
-    <header class="header">
+  <main class="page-container">
+    <header class="page-header">
       <img src="./images/desktop/logo.svg" alt="Logo">
     </header>
 
-    <div class="introduction">
-      <h1 class="title">Publish your podcasts <span class="color-0">everywhere.</span></h1>
-      <p class="description">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+    <div class="content">
+      <h1 class="content-title">Publish your podcasts <span>everywhere.</span></h1>
+      <p class="content-description">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
 
-      <form class="form">
-        <div class="form-group">
+      <form class="content-form">
+        <div class="form-wrapper">
           <input type="email" name="email" id="email" placeholder="Email address">
           <button>Request Access</button>
         </div>
 
-        <span class="error-message">Oops! Please check your email</span>
+        <span class="form-error-message">Oops! Please check your email</span>
       </form>
 
-      <ul class="platform-list">
+      <ul class="content-platform-list">
         <li><img src="./images/desktop/spotify.svg" alt="Spotify"></li>
         <li><img src="./images/desktop/apple-podcast.svg" alt="Apple Podcast"></li>
         <li><img src="./images/desktop/google-podcasts.svg" alt="Google Podcasts"></li>
