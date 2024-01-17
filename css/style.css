@@ -198,7 +198,7 @@ ul {
   }
 }
 
-/* TODO: Criar media-querie de 480px para a image-host-480px.jpg */
+/* TODO: Criar media query para 480px e definir "image-host-480px.jpg" como plano de fundo (background) */
 
 @media (max-width: 375px) {
   body {
@@ -206,7 +206,7 @@ ul {
   }
 
   .page-container {
-    /* TODO: Trocar image-host.jpg pela image-host-375px.jpg */
+    /* TODO: Substituir "image-host.jpg" por "image-host-375px.jpg" e apagar "image-host.jpg" após verificar se tudo está correto */
     background-color: var(--color-1);
     background-image: url("../images/mobile/image-host.jpg");
     background-repeat: no-repeat;
