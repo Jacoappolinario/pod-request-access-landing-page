@@ -198,12 +198,15 @@ ul {
   }
 }
 
+/* TODO: Criar media-querie de 480px para a image-host-480px.jpg */
+
 @media (max-width: 375px) {
   body {
     align-items: initial;
   }
 
   .page-container {
+    /* TODO: Trocar image-host.jpg pela image-host-375px.jpg */
     background-color: var(--color-1);
     background-image: url("../images/mobile/image-host.jpg");
     background-repeat: no-repeat;
