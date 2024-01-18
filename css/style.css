@@ -8,6 +8,7 @@
   --color-4: #5a668a;
   --color-5: #c2cbe5;
   --color-6: #b3ffe2;
+  --color-7: #fb3e3e;
 }
 
 body {
@@ -143,16 +144,37 @@ ul {
   transform: translateY(-50%);
 }
 
-.form-error-message {
+.form-email-error-message {
   display: none;
   font-size: 0.75rem;
   font-weight: 400;
-  color: #fb3e3e;
+  color: var(--color-7);
   margin-left: 2rem;
 }
 
-.form-error-message.visible {
+.form-email-error-message.visible {
   display: block;
+}
+
+.access-request-success-message,
+.access-request-error-message {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.55;
+  max-width: 40ch;
+  color: var(--color-0);
+  padding: 1rem;
+  box-sizing: border-box;
+  background: var(--color-2);
+  margin-bottom: 2.5rem;
+}
+
+.access-request-success-message span {
+  color: var(--color-3);
+}
+
+.access-request-error-message span {
+  color: var(--color-7);
 }
 
 .content-platform-list {
@@ -272,5 +294,17 @@ ul {
     top: initial;
     transform: initial;
     width: 100%;
+  }
+
+  .form-email-error-message {
+    align-self: center;
+    margin-left: 0px;
+  }
+
+  .access-request-success-message,
+  .access-request-error-message {
+    font-size: 0.9375rem;
+    line-height: 1.66;
+    text-align: center;
   }
 }
