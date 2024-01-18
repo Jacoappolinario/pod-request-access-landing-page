@@ -17,9 +17,9 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: end;
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  justify-content: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 img {
@@ -161,15 +161,15 @@ ul {
   gap: 2.5rem;
 }
 
-@media (min-width: 1500px) {
+@media (max-width: 1440px) {
   body {
-    justify-content: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    justify-content: end;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   body {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -198,19 +198,16 @@ ul {
   }
 }
 
-/* TODO: Criar media query para 480px e definir "image-host-480px.jpg" como plano de fundo (background) */
-
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   body {
     align-items: initial;
   }
 
   .page-container {
-    /* TODO: Substituir "image-host.jpg" por "image-host-375px.jpg" e apagar "image-host.jpg" após verificar se tudo está correto */
     background-color: var(--color-1);
     background-image: url("../images/mobile/image-host.jpg");
     background-repeat: no-repeat;
-    background-position: initial;
+    background-position: center;
     background-blend-mode: multiply;
     mix-blend-mode: screen;
     opacity: 0.7993;
