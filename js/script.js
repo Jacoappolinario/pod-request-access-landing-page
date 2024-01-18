@@ -34,7 +34,7 @@ function sendForm(event) {
     method: "POST",
     body: data,
     delayTime: 2000,
-    simulateSuccess: false,
+    simulateSuccess: true,
   }).then(formSent);
 }
 
