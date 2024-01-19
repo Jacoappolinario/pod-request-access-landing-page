@@ -230,6 +230,7 @@ ul {
     background-image: url("../images/mobile/image-host.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     background-blend-mode: multiply;
     mix-blend-mode: screen;
     opacity: 0.7993;
