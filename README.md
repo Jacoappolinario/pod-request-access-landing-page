@@ -2,7 +2,7 @@
 
 ![Design preview for the Pod request access landing page coding challenge](./preview.jpg)
 
-## 🎯 Project Description
+## 📋 Project Description
 
 This project, **Pod Request Access Landing Page**, is a dedicated landing page for Pod access requests. It's part of a challenge from Frontend Mentor.
 
