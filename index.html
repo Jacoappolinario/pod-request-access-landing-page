@@ -5,19 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
   <title>Frontend Mentor | Pod request access landing page</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <meta name="description" content="Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  Publish your podcasts everywhere.
+  <main class="page-container">
+    <header class="page-header">
+      <img src="./images/desktop/logo.svg" alt="Logo">
+    </header>
 
-  Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
-  Apple Podcasts, Google Podcasts, Pocket Casts and more!
+    <div class="content">
+      <h1 class="content-title">Publish your podcasts <span>everywhere.</span></h1>
+      <p class="content-description">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
 
-  Request access
+      <form class="content-form">
+        <div class="form-wrapper">
+          <input type="text" name="email" id="email" placeholder="Email address">
+          <button>Request Access</button>
+        </div>
+
+        <span class="form-email-error-message">Oops! Please check your email</span>
+      </form>
+
+      <ul class="content-platform-list">
+        <li><img src="./images/desktop/spotify.svg" alt="Spotify"></li>
+        <li><img src="./images/desktop/apple-podcast.svg" alt="Apple Podcast"></li>
+        <li><img src="./images/desktop/google-podcasts.svg" alt="Google Podcasts"></li>
+        <li><img src="./images/desktop/pocket-casts.svg" alt="Pocket Casts"></li>
+      </ul>
+    </div>
+  </main>
+  <script src="./js/fake-fetch.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
