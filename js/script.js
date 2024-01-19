@@ -1,32 +1,59 @@
 const form = document.querySelector(".content-form");
 
+function updateDomWithMessage(message, success = false) {
+  const messageElement = document.createElement("p");
+  const messageClass = success
+    ? "access-request-success-message"
+    : "access-request-error-message";
+
+  messageElement.classList.add(messageClass);
+  messageElement.innerText = message;
+  form.innerHTML = "";
+  form.appendChild(messageElement);
+}
+
 function formSent(response) {
-  if (response.ok) {
-    form.innerHTML =
-      "<p class='access-request-success-message'><span>Access request sent.</span> We will contact you shortly. We usually reply within 24 hours.</p>";
-  } else {
-    form.innerHTML =
-      "<p class='access-request-error-message'><span>Error sending access request.</span> You can send it directly to our e-mail address: contato@podcasts.com</p>";
-  }
+  const message = response.ok
+    ? "Access request sent. We will contact you shortly. We usually reply within 24 hours."
+    : "Error sending access request. You can send it directly to our e-mail address: contact@podcasts.com";
+
+  updateDomWithMessage(message, response.ok);
+}
+
+function validateEmail(emailField) {
+  const emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  return emailFormat.test(emailField);
+}
+
+function showErrorMessage(errorMessageField) {
+  errorMessageField.classList.add("visible");
+}
+
+function hideErrorMessage(errorMessageField) {
+  errorMessageField.classList.remove("visible");
+}
+
+function disableButton(button) {
+  button.disabled = true;
+  button.innerText = "sending...";
 }
 
 function sendForm(event) {
   event.preventDefault();
 
   const emailField = document.querySelector("#email").value;
-  const errorMessage = document.querySelector(".form-email-error-message");
+  const errorMessageField = document.querySelector(".form-email-error-message");
 
-  const emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
-  if (!emailField.match(emailFormat)) {
-    errorMessage.classList.add("visible");
+  if (!validateEmail(emailField)) {
+    showErrorMessage(errorMessageField);
     return;
+  } else {
+    hideErrorMessage(errorMessageField);
   }
 
   const button = document.querySelector(".content-form button");
 
-  button.disabled = true;
-  button.innerText = "sending...";
+  disableButton(button);
 
   const data = new FormData(form);
 

@@ -132,7 +132,7 @@ ul {
   cursor: pointer;
 }
 
-.form-wrapper button:hover {
+.form-wrapper button:active {
   background: var(--color-6);
   box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.5);
 }
@@ -162,18 +162,17 @@ ul {
   font-weight: 400;
   line-height: 1.55;
   max-width: 40ch;
-  color: var(--color-0);
   padding: 1rem;
   box-sizing: border-box;
   background: var(--color-2);
   margin-bottom: 2.5rem;
 }
 
-.access-request-success-message span {
+.access-request-success-message {
   color: var(--color-3);
 }
 
-.access-request-error-message span {
+.access-request-error-message {
   color: var(--color-7);
 }
 
